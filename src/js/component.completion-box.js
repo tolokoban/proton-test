@@ -62,7 +62,6 @@ require( 'component.completion-box', function( exports, module ) {
      * used.
      */
     CompletionBox.prototype.selectEMail = function( email ) {
-        console.info("[component.completion-box] email=...", email);
         this._onClick( email );
     };
 
@@ -75,8 +74,6 @@ require( 'component.completion-box', function( exports, module ) {
      * @return {boolean} - `true`if the key has been handled.
      */
     CompletionBox.prototype.handleKeyDown = function( evt ) {
-        console.info("[component.completion-box] evt.keyCode=...", evt.keyCode);
-
         // Index of the currently selected index.
         var idx;
         // Available items.

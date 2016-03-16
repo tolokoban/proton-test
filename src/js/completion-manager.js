@@ -56,8 +56,6 @@ require( 'completion-manager', function( exports, module ) {
             return 0;
         });
 
-console.info("[completion-manager] result=...", result);
-
         return result.map( function( occurence ) {
             return { label: occurence.item.label, value: occurence.item.value };
         });

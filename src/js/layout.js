@@ -6,7 +6,13 @@ require( 'layout', function( exports, module ) {
      * @param refContainer {object} - Size  of the container. Must own
      * properties `width` and `height`.
      * @param refFrame {object} - Size  of a frame. Must own
-     * properties `width` and `height`.
+     * properties `width` and `height`. Default is `{ width: 500, height: 480 }`.
+     * @param  margin {number}  - Distance  from the  container's left
+     * border and the first frame. Default is 32.
+     *
+     * @return {array}
+     * An array of `count` positions. A position is an object with two
+     * attributes: `top` and `left`. They are numbers.
      */
     module.exports = function( count, rectContainer, rectFrame, margin ) {
         // Noting to compute if the number of frames is lesser than 1.
