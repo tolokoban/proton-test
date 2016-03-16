@@ -52,15 +52,18 @@ Because this is an exercise, I do not use the minified version of my javascript 
 There are three steps in this exercise. So here are the main modules for each step:
 
 * __component.editor.js__: wrapper for the Squire wysiwyg editor.
-  ```
+* __component.autocomplete.js__: component providing email autocompletion.
+  It internally uses `completion-manager.js` for the completion algorithm.
+* __layout.js__: this module provide only one function that will return the positions of frames in a specified container.
+
+```
   var Editor = require("component.editor.js");
   var editor = new Editor();
   editor.appendTo( document.body );
   editor.content = "<h1>ProtonMail</h1>";  
-  ```
-* __component.autocomplete.js__: component providing email autocompletion.
-  It internally uses `completion-manager.js` for the completion algorithm.
-  ```
+```
+
+```
   var AutoComplete = require("component.autocomplete");
   var comp = new AutoComplete();
   comp.addresses = [
@@ -75,6 +78,4 @@ There are three steps in this exercise. So here are the main modules for each st
       {label: "The galaxy's president", value: 'president@galaxy.com'},
       {label: 'Trekking', value: 'contact@trail-passion.org'}
   ];  
-  ```
-* __layout.js__: this module provide only one function that will return the positions of frames in a specified container.
-
+```
