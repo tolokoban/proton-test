@@ -18,8 +18,16 @@ Then, to build the project, simply write this on command line:
 gulp
 ```
 
+To perform the Karma tests:
+
+```
+npm test
+```
+
 The result can be viewed in a browser opening `www/index.html`.
 Tested on Google Chrome and Firefox only.
+
+For the __editor__ component to work properly on Google Chrome, you'd better make the `www` folder to be on a webserver.
 
 
 ## Folders structure
