@@ -1,0 +1,39 @@
+div.component-autocomplete {
+    display: block;
+    overflow: hidden;
+    padding: 3px;
+}
+
+div.component-autocomplete > input {
+    display: inline-block;
+    margin: 0;
+    height: 2em;
+    vertical-align: 2em;
+    vertical-align: middle;
+    border: none;
+    width: 80px;
+    box-sizing: border-box;
+    font-weight: bold;
+    background: transparent;
+}
+
+div.component-autocomplete > input::-moz-placeholder,
+div.component-autocomplete > input::-webkit-input-placeholder
+div.component-autocomplete > input:-ms-input-placeholder
+{
+    color: #7f7;
+}
+
+div.component-autocomplete > div {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 2em;
+    right: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+div.component-autocomplete > div.hide {
+    display: none;
+}

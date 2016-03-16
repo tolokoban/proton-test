@@ -1,0 +1,16 @@
+div.component-completion-item {
+    font-size: 80%;
+    display: block;
+    margin: 0;
+    line-height: 2rem;
+    padding: 0 1rem;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 0 0 1px #bbb;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+div.component-completion-item.selected {
+    background-color: #ccc;
+}

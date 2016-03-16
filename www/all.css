@@ -1,0 +1,201 @@
+div.component-autocomplete {
+  display: block;
+  overflow: hidden;
+  padding: 3px; }
+
+div.component-autocomplete > input {
+  display: inline-block;
+  margin: 0;
+  height: 2em;
+  vertical-align: 2em;
+  vertical-align: middle;
+  border: none;
+  width: 80px;
+  box-sizing: border-box;
+  font-weight: bold;
+  background: transparent; }
+
+div.component-autocomplete > input::-moz-placeholder,
+div.component-autocomplete > input::-webkit-input-placeholder
+div.component-autocomplete > input:-ms-input-placeholder {
+  color: #7f7; }
+
+div.component-autocomplete > div {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 2em;
+  right: 0;
+  width: 100%;
+  z-index: 3; }
+
+div.component-autocomplete > div.hide {
+  display: none; }
+
+div.component-completion-item {
+  font-size: 80%;
+  display: block;
+  margin: 0;
+  line-height: 2rem;
+  padding: 0 1rem;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 0 0 1px #bbb;
+  white-space: nowrap;
+  overflow: hidden; }
+
+div.component-completion-item.selected {
+  background-color: #ccc; }
+
+div.component-composer-head {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  background: #505061;
+  text-align: right; }
+
+div.component-composer-head > div {
+  display: inline-block;
+  border-left: 1px solid #eee;
+  padding: 0 1em;
+  color: #eee;
+  font-variant: small-caps;
+  cursor: pointer; }
+
+div.component-composer-tail {
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  right: 0;
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  background: #505061;
+  text-align: right; }
+
+div.component-composer-tail > div {
+  display: inline-block;
+  border-left: 1px solid #eee;
+  padding: 0 1em;
+  color: #eee;
+  font-variant: small-caps;
+  cursor: pointer; }
+
+div.component-editor {
+  position: relative;
+  display: block;
+  margin: 0;
+  box-shadow: 0 -1px 0 0 #ccc;
+  min-height: 100px; }
+
+div.component-editor > iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none; }
+
+div.component-email-item {
+  display: inline-block;
+  vertical-align: middle;
+  padding: .25em .5em;
+  font-size: 75%;
+  background-color: #ccc;
+  cursor: pointer;
+  border-radius: .25em;
+  margin-right: .5em; }
+
+div.component-email-item:hover {
+  box-shadow: 0 0 0 1px #333; }
+
+div.component-composer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 500px;
+  height: 480px;
+  overflow: hidden;
+  border-radius: 6px;
+  transition-duration: .2s;
+  transition-property: left, top;
+  box-shadow: 0 0 0 2px #333;
+  background-color: #aaa;
+  z-index: 1; }
+
+div.component-composer.active {
+  box-shadow: 0 0 4px 4px #000;
+  background-color: #eee;
+  z-index: 2; }
+
+@media (max-width: 500px) {
+  div.component-composer {
+    width: 100%; } }
+
+@media (max-height: 480px) {
+  div.component-composer {
+    height: 100%; } }
+
+div.component-composer > div.table {
+  position: absolute;
+  left: 0;
+  top: 32px;
+  right: 0;
+  bottom: 32px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  -webkit-flex-direction: column; }
+
+div.component-composer > div.table > div {
+  -webkit-flex: 0 1 auto;
+  flex: 0 1 auto; }
+
+div.component-composer > div.table > div:last-child {
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif; }
+
+body {
+  overflow: hidden; }
+
+nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 128px;
+  height: 100%;
+  background-color: #555;
+  text-align: center;
+  padding-top: 1em; }
+
+nav > button {
+  border: none;
+  background-color: #7e82b4;
+  color: #fff;
+  width: 96px;
+  cursor: pointer;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px; }
+
+section {
+  position: absolute;
+  left: 128px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  padding: 1em; }

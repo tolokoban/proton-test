@@ -1,0 +1,53 @@
+div.component-composer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 500px;
+    height: 480px;
+    overflow: hidden;
+    border-radius: 6px;
+    transition-duration: .2s;
+    transition-property: left, top;
+    box-shadow: 0 0 0 2px #333;
+    background-color: #aaa;
+    z-index: 1;
+}
+
+div.component-composer.active {
+    box-shadow: 0 0 4px 4px #000;
+    background-color: #eee;
+    z-index: 2;
+}
+
+@media (max-width: 500px) {
+    div.component-composer {
+        width: 100%;
+    }
+}
+@media (max-height: 480px) {
+    div.component-composer {
+        height: 100%;
+    }
+}
+
+div.component-composer > div.table {
+    position: absolute;
+    left: 0;
+    top: 32px;
+    right: 0;
+    bottom: 32px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+
+div.component-composer > div.table > div {
+    -webkit-flex: 0 1 auto;
+    flex: 0 1 auto;
+}
+
+div.component-composer > div.table > div:last-child {
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+}

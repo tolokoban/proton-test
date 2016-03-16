@@ -1,0 +1,14 @@
+div.component-email-item {
+    display: inline-block;
+    vertical-align: middle;
+    padding: .25em .5em;
+    font-size: 75%;
+    background-color: #ccc;
+    cursor: pointer;
+    border-radius: .25em;
+    margin-right: .5em;
+}
+
+div.component-email-item:hover {
+    box-shadow: 0 0 0 1px #333;
+}
