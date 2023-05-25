@@ -13,7 +13,7 @@ window.addEventListener(
         ];
         var words = [
             "Hello world!", "ProtonMail", "Tolokoban", "42 is the answer", "Don't panic",
-            "Do you like fishing?", "Jabascript", "HTML5", "WebMail", "Welcome on board"
+            "Do you like fishing?", "Javascript", "HTML5", "WebMail", "Welcome on board"
         ];
         function pickWord() {
             return words[Math.floor( Math.random() * words.length )];
